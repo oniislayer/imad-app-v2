@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var arts = {
-  art1:{
+  'article-one':{
     title:'article one',
     heading:'Article one',
     date:'mar 23 2k17',
@@ -38,7 +38,7 @@ var arts = {
 
     </p>`
 },
-  art2:{
+  'article-two':{
     title:'article two',
     heading:'Article two',
     date:'mar 13 2k17',
@@ -69,7 +69,7 @@ var arts = {
         Here is the goddamn content of article one
 
     </p>`},
-  art3:{ title:'article three',
+  'article-three':{ title:'article three',
     heading:'Article three',
     date:'mar 12 2k17',
     content:`<p>
@@ -137,19 +137,13 @@ return htmltemp;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article-one',function(req,res)
+app.get('/:artname',function(req,res)
 {
-res.send(createtemp(art))
+    var artname=res.params.artname;
+res.send(art[artname]);
     
 });
-app.get('/article-two',function(req,res)
-{
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-app.get('/article-three',function(req,res)
-{
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
