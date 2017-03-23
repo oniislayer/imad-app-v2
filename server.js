@@ -139,7 +139,7 @@ app.get('/', function (req, res) {
 });
 app.get('/:artname',function(req,res)
 {
-    var artname=res.params.artname;
+    var artname=req.params.artname;
 res.send(createtemp(arts[artname]));
     
 });
