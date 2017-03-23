@@ -5,8 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-var art={
+var arts = {
+  art1:{
     title:'article one',
     heading:'Article one',
     date:'mar 23 2k17',
@@ -37,6 +37,68 @@ var art={
         Here is the goddamn content of article one
 
     </p>`
+},
+  art2:{
+    title:'article two',
+    heading:'Article two',
+    date:'mar 13 2k17',
+    content:`<p>
+        Here is the goddamn content of article one
+                Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+
+    </p>
+     <p>
+        Here is the goddamn content of article one
+                Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+
+    </p>
+     <p>
+        Here is the goddamn content of article one
+                Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+
+    </p>`},
+  art3:{ title:'article three',
+    heading:'Article three',
+    date:'mar 12 2k17',
+    content:`<p>
+        Here is the goddamn content of article one
+                Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+
+    </p>
+     <p>
+        Here is the goddamn content of article one
+                Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+
+    </p>
+     <p>
+        Here is the goddamn content of article one
+                Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+        Here is the goddamn content of article one
+
+    </p>`}
 };
 
 function createtemp(d){
