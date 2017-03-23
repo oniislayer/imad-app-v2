@@ -44,8 +44,7 @@ var arts = {
     date:'mar 13 2k17',
     content:`<p>
         content of 2
-
-    </p>`},
+        </p>`},
   'article-three':{ title:'article three',
     heading:'Article three',
     date:'mar 12 2k17',
@@ -100,8 +99,7 @@ var htmltemp = `
 ${date}
 </div>
 <hr>
-<h3>Article one</h3>
-<div class="art">
+<h3>Article</h3>
 <div>
     ${content}
 </div>
