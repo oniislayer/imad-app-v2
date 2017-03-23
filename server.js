@@ -45,34 +45,12 @@ var arts = {
     content:`<p>
         content of 2
         </p>`},
-  'article-three':{ title:'article three',
+  'article-three':{ 
+    title:'article three',
     heading:'Article three',
     date:'mar 12 2k17',
     content:`<p>
-        Here is the goddamn content of article one
-                Here is the goddamn content of article one
-        Here is the goddamn content of article one
-        Here is the goddamn content of article one
-        Here is the goddamn content of article one
-        Here is the goddamn content of article one
-
-    </p>
-     <p>
-        Here is the goddamn content of article one
-                Here is the goddamn content of article one
-        Here is the goddamn content of article one
-        Here is the goddamn content of article one
-        Here is the goddamn content of article one
-        Here is the goddamn content of article one
-
-    </p>
-     <p>
-        Here is the goddamn content of article one
-                Here is the goddamn content of article one
-        Here is the goddamn content of article one
-        Here is the goddamn content of article one
-        Here is the goddamn content of article one
-        Here is the goddamn content of article one
+        content of 3
 
     </p>`}
 };
