@@ -140,7 +140,7 @@ app.get('/', function (req, res) {
 app.get('/:artname',function(req,res)
 {
     var artname=res.params.artname;
-res.send(art[artname]);
+res.send(arts[artname]);
     
 });
 
