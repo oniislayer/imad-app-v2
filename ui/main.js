@@ -25,8 +25,7 @@ c.onclick=function()
 
 };
 
-var nameip=document.getElementById('name');
-var name=nameip.value;
+
 var submit=document.getElementById('sub');
 submit.onclick=function(){
     //make req
@@ -51,6 +50,8 @@ submit.onclick=function(){
                 }
            }
  };
+        var nameip=document.getElementById('name');
+        var name=nameip.value;
         request.open('GET','http://oniislayer.imad.hasura-app.io/submitname?name='+ name, true);
         request.send(null);
 };
