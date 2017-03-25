@@ -43,7 +43,7 @@ submit.onclick=function(){
                 var list='';
                 for(i=0;i<names.length;i++)
                 {
-                    list += '<lis>' + names[i] + '</lis>';
+                    list += '<li>' + names[i] + '</li>';
                 }
                 var ul=document.getElementById('namelist');
                 ul.innerHTML=list;
