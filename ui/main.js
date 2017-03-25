@@ -26,7 +26,7 @@ c.onclick=function()
 };
 
 var nameip=document.getElementById('name');
-var namei=nameip.value;
+var name=nameip.value;
 var submit=document.getElementById('sub');
 submit.onclick=function(){
     //make req
