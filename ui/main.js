@@ -30,14 +30,27 @@ var name=nameip.value;
 var submit=document.getElementById('sub');
 submit.onclick=function(){
     //make req
+    var request = new XMLHttpRequest();
     
-    //get req
-    var names=['name1','name2','name3','name4','name5'];
-    var list='';
-    for(i=0;i<names.length;i++)
-    {
-        list += '<lis>' + names[i] + '</lis>';
-    }
-    var ul=document.getElementById('namelist');
-    ul.innerHTML=list;
+    //capture req
+  request.onreadystatechange=function()
+  {
+            if(request.readyState===XMLHttpRequest.DONE){
+                if(request.Status===200){
+    
+                //get req
+                var names=request.responseText;
+                names=JSON.parse(names);
+                var list='';
+                for(i=0;i<names.length;i++)
+                {
+                    list += '<lis>' + names[i] + '</lis>';
+                }
+                var ul=document.getElementById('namelist');
+                ul.innerHTML=list;
+                }
+           }
+ };
+        request.open('GET','http://oniislayer.imad.hasura-app.io/submitname?name='+ name, true);
+        request.send(null);
 };
