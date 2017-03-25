@@ -97,6 +97,12 @@ res.send(createtemp(arts[artname]));
     
 });
 
+var counter=0;
+app.get('/counter', function(req,res) {
+   counter+=1;
+   res.send(counter.toString());
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
