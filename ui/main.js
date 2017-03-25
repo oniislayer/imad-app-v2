@@ -11,7 +11,7 @@ function moveright()
   if(marginLeft===100)
   {
       marginLeft = marginLeft - 5;
-      i.style.marginRight = marginLeft + 'px';
+      i.style.marginLeft = marginLeft + 'px';
   }
 }
 i.onclick= function(){
