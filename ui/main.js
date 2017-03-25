@@ -4,6 +4,11 @@ e.innerHTML="JEssie lets cook";
 
 var i=document.getElementById('mad');
 
+var moveright=function(){
+    marginLeft=marginLeft + 10;
+  i.style.marginLeft=marginLeft+'px';
+};
 i.onclick= function() {
-    i.style.marginLeft='100px';
+
+    var int=setInterval(moveright,100);
 };
