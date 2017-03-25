@@ -5,6 +5,7 @@ console.log('Loaded!');
 
 var c= document.getElementById('counter');
 
+c.onclick=function(){
 var request = new XMLHttpRequest();
 
 request.onreadystatechange=function(){
@@ -21,6 +22,6 @@ request.onreadystatechange=function(){
 request.open('GET','http://oniislayer.imad.hasura-app.io/counter',true);
 request.send(null);
 
-
+};
 
     
