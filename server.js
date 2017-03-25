@@ -97,11 +97,13 @@ res.send(createtemp(arts[artname]));
     
 });
 
-
+app.get('/artone', function(req,res){
+    res.send('this is art one');
+});
 
 
 var counter = 0;
-app.get('counter', function(req,res){
+app.get('/counter', function(req,res){
     counter=counter + 1;
     res.send(counter.toString());
 });
