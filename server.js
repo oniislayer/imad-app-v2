@@ -97,7 +97,7 @@ res.send(createtemp(arts[artname]));
     
 });
 
-app.get('')
+
 
 
 var counter = 0;
