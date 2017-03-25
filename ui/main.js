@@ -1,3 +1,3 @@
 console.log('Loaded!');
-var e = document.getElemenById("text");
+var e = document.getElementById("text");
 e.innerHTML="JEssie lets cook";
