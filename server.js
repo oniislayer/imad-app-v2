@@ -32,7 +32,7 @@ app.get('/counter', function(req,res){
     res.send(counter.toString());
 });
 var pool = new Pool(config);
-app.get('/testdb', function(req,res){
+app.get('/testdb', function(req,res) {
    //make req
    //make response
    pool.query('SELECT * FROM test'),function(err,res){
@@ -44,7 +44,8 @@ app.get('/testdb', function(req,res){
        {
            res.send(JSON.stringify(result));
        }
-   };
+   };   
+    
 });
 
 
